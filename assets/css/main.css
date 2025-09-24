@@ -2354,7 +2354,6 @@ ul.publications li a[href^="https://doi.org"] {
 		grid-template-columns: 1fr;
 	}
 }
-
 /* News Card Style */
 .container.news {
 	background: #fff;
@@ -2370,6 +2369,8 @@ ul.publications li a[href^="https://doi.org"] {
 	height: auto;
 	display: block;
 	margin: 0 auto;
+	aspect-ratio: 4/3;
+	object-fit: contain;
 }
 
 .container.news h3 {
@@ -2388,46 +2389,54 @@ ul.publications li a[href^="https://doi.org"] {
 	margin-top: 1.5em;
 	flex-wrap: wrap;
 }
-/* 單張圖片時 max-width 800px，兩張以上 max-width 400px */
-.container.news .image-container img {
-	width: 100%;
-	height: auto;
-	aspect-ratio: 4/3;
-	object-fit: contain;
-	display: block;
-	max-width: 420px;
-	margin-right: 8px; /* 新增：縮小圖片間距 */
-}
 
-.container.news .image-container img:last-child {
-	margin-right: 0; /* 最後一張不要右邊間距 */
-}
-
-.container.news .image-container:only-child img,
-.container.news .image-container img:only-child {
-	max-width: 800px;
-	margin-right: 0;
-}
-
-/* 讓單張圖片時 max-width:800px，兩張以上 max-width:400px */
-.container.news .image-container img:only-child {
-	max-width: 800px;
-	margin-right: 0;
-}
-
-@media (max-width: 800px) {
+/* 兩欄排列圖片（寬度超過 900px） */
+@media (min-width: 901px) {
 	.container.news .image-container {
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 		gap: 1em;
-		align-items: center;
 	}
 	.container.news .image-container img {
+		width: 100%;
 		max-width: 100%;
-		aspect-ratio: auto;
-		margin-right: 0;
+		margin: 0 auto;
+		aspect-ratio: 4/3;
+		object-fit: contain;
 	}
 }
 
+/* RWD: 手機單欄 */
+@media (max-width: 900px) {
+	.container.news .image-container {
+		flex-direction: column;
+		align-items: stretch;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		gap: 1em;
+		display: flex;
+	}
+	.container.news .image-container img {
+		width: 100%;
+		max-width: 100%;
+		margin: 0 auto;
+		flex: 1 1 100%;
+		aspect-ratio: 4/3;
+		object-fit: contain;
+	}
+}
+
+/* 最後一張不要右邊間距 */
+.container.news .image-container img:last-child {
+	margin-right: 0;
+}
+
+/* 只有一張圖片時 max-width:800px */
+.container.news .image-container img:only-child {
+	max-width: 800px;
+	margin-right: 0;
+}
 
 /* Copyright */
 
