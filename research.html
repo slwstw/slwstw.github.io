@@ -6,11 +6,11 @@
 -->
 <html>
 	<head>
-		<title>Wei Weng's Sustainable Land-Water Systems Lab | NTU Geography</title>
+		<title> Research | Wei Weng's Sustainable Land-Water Systems Lab (SLWS) | NTU Geography</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="Sustainable Land-Water Systems Lab by Prof. Wei Weng, Department of Geography, National Taiwan University (NTU). Research, teaching, publications, and contact information for Prof. Wei Weng.">
-		<meta name="keywords" content="Wei Weng, Sustainable Land-Water Systems Lab, NTU Geography, National Taiwan University, research, aerial rivers, climate change, land-water systems, ESG">
+		<meta name="keywords" content="Wei Weng, Sustainable Land-Water Systems Lab, SLWS, NTU Geography, National Taiwan University, research, aerial rivers, climate change, land-water systems, ESG">
 		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
@@ -18,32 +18,8 @@
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<section id="header">
-					<div class="container">
-
-						<!-- Logo -->
-							<h1 id="logo"><a href=".">永續地水系統研究室</a></h1>
-							<h2 style="color: #ed786a; margin-top: 0.6em;
-							font-weight: bold; text-shadow: 2px 2px 4px #aaa;"><a href=".">Sustainable Land-Water Systems Lab</a></h2>
-							<p style="text-transform: none; font-size: 1.2em;">By Prof. Wei Weng<br />Department of Geography, National Taiwan Unversity</p>
-
-						<!-- Nav -->
-							<nav id="nav">
-								
-								<ul>
-									<li><a href="." class="icon solid fa-home"><span>HOME</span></a></li>
-									<li><a href="about.html" class="icon solid fa-address-card"><span>ABOUT WEI</span></a></li>
-									<li><a href="members.html" class="icon solid fa-users"><span>MEMBERS</span></a></li>
-									<li><a href="research.html" class="icon solid fa-university"><span>RESEARCH</span></a></li>
-									<li><a href="publications.html" class="icon solid fa-book"><span>PUBLICATIONS</span></a></li>
-									<li><a href="teaching.html" class="icon solid fa-graduation-cap"><span>TEACHING</span></a></li>
-									<li><a href="news.html" class="icon solid fa-newspaper"><span>NEWS</span></a></li>
-                                    <!--<li><a class="icon solid fa-sitemap" href="no-sidebar.html"><span>No Sidebar</span></a></li>-->
-								</ul>
-							</nav>
-
-					</div>
-				</section>
+			<!-- Please edit Header in "header.html" -->
+			 <div id="header"></div>
 				
 			<!-- Features -->
 	
@@ -62,16 +38,18 @@
 								</ul>
 								<h3>Master’s projects</h3>
 								<ul >
-									<li>Climate Change Adaptation in Amazonian Tribes (Leandro Eugênio de Souza)</li>
-									<li>Minimum Mortality Temperature in European Cities (Phoenix Wu)</li>
 									<li>Damage Function: Historical Droughts in Central Taiwan (Shawn Lee)</li>
+									<li>The Impact of Urban Infrastructure on Population Adaptation to Extreme Temperature (Shawn Lee)</li>
 								</ul>
 								<h3>Bachelor's projects</h3>
 								<ul >
 									<li>On Data Uncertainties of Continental Moisture Tracking (Ping Fu)</li>
-									<li>Moisture Relevance in the Livelihood of Andean foothills (Austin Xiao)</li>
-									<li>Drought’s Economic Impact in Central Taiwan (Samuel Chen)</li>
-									<li>Future Food Crisis: Will we get Through? (Herman Ho)</li>
+									<li>Wild fire impact on public health in legal Amazonia region (Ping Fu; Timothy Chen)</li>
+									<li>Not Just Numbers: Water-Based Livelihood in a Deforested Amazonian Landscape (Austin Xiao)</li>
+									<li>If the Century Drought Strikes Again: Assessing Economic Losses, Water Resource Resilience, and Policy Adaptation in Taiwan under Prolonged Drought (NSTC 114-2813-C-002-203-H) (Zi-Feng Chen)</li>
+									<li>Feeding Growing Cities: Tracing Causal Relationship between Urbanization and Protein Supply (Herman Ho)</li>
+									<li>Analyzing the Transformation of Taiwan’s Rice System after 1997 through the Multi-Level Perspective in Transition Studies (NSTC 114-2813-C-002-011-M) (Tiana Lu)</li>
+									<li>TNFD & Nature-related Financial Disclosure (Eru Chiang; Tiana Lu)</li>
 								</ul>
 								<strong>If you are interested in the projects above or have any research ideas related to Latin America, sustainable land-water system management, or ESG, please do not hesitate to contact me at </strong><a href = "mailto: weiweng@ntu.edu.tw">weiweng@ntu.edu.tw</a>
 							</div>
@@ -79,23 +57,9 @@
 					</section>
 				</a>
 			
-
-				
-			
 			<!-- Footer -->
-				<section id="footer">
-					<div id="copyright" class="container">
-						<header>
-							<h2><strong>Contact</strong></h2>
-						</header>
-						<ul class="links">
-							<li><strong>Office: 台大地理系館 R507室 </strong></li><li><a href = "mailto: weiweng@ntu.edu.tw"><strong>Email: weiweng@ntu.edu.tw </strong></a></li><li><strong><a href = "tel: +886-2-33665838">Tel: +886-2-3366-5838</a></strong></li>
-						</ul>
-						<ul class="links">
-							<li>&copy; 2025 Sustainable Land-Water Systems Lab, NTU Geography. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Modify: Ching & Potter </li>
-						</ul>
-					</div>
-				</section>
+			<!-- Please edit Footer in "footer.html" -->
+			 <div id="footer"></div>
 
 		</div>
 
@@ -106,6 +70,10 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+			fetch('header.html').then(r => r.text()).then(t => document.getElementById('header').innerHTML = t);
+			fetch('footer.html').then(r => r.text()).then(t => document.getElementById('footer').innerHTML = t);
+			</script>
 
 	</body>
 </html>

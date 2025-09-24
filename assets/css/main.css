@@ -18,38 +18,12 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;}
-
-body {
-	line-height: 1;
-}
-
-ol, ul {
-	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
+	.container {
+		max-width: 1000px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 20px;
 	}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
 }
 
 body {
@@ -2360,7 +2334,7 @@ ul.publications li a[href^="https://doi.org"] {
 	border-radius: 12px;
 	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 	padding: 2em 2em 1.5em 2em;
-	margin: 2em auto;
+	margin: 1em auto;
 	max-width: 950px;
 }
 
@@ -2404,6 +2378,15 @@ ul.publications li a[href^="https://doi.org"] {
 		aspect-ratio: 4/3;
 		object-fit: contain;
 	}
+	/* 只有一張圖片時 max-width:800px 並讓其單欄置中 */
+	.container.news .image-container:only-child,
+	.container.news .image-container img:only-child {
+		grid-column: 1 / -1;
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
 }
 
 /* RWD: 手機單欄 */
@@ -2425,6 +2408,12 @@ ul.publications li a[href^="https://doi.org"] {
 		aspect-ratio: 4/3;
 		object-fit: contain;
 	}
+	/* 手機時只有一張圖片也設 max-width:800px */
+	.container.news .image-container img:only-child {
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 /* 最後一張不要右邊間距 */
@@ -2432,10 +2421,12 @@ ul.publications li a[href^="https://doi.org"] {
 	margin-right: 0;
 }
 
-/* 只有一張圖片時 max-width:800px */
+/* 只有一張圖片時 max-width:900px */
 .container.news .image-container img:only-child {
-	max-width: 800px;
+	max-width: 900px;
 	margin-right: 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Copyright */
