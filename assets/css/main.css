@@ -2251,6 +2251,14 @@ input, select, textarea {
 			text-align: center;
 		}
 
+/* Publications List */
+ul.publications li a {
+	border-bottom: none;
+}
+ul.publications li a[href^="https://doi.org"] {
+	border-bottom: 1px solid #ddd;
+}
+
 /* Members Card Section */
 
 #lab-members {
