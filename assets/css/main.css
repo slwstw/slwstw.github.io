@@ -2421,9 +2421,9 @@ ul.publications li a[href^="https://doi.org"] {
 	margin-right: 0;
 }
 
-/* 只有一張圖片時 max-width:900px */
+/* 只有一張圖片時 max-width:600px */
 .container.news .image-container img:only-child {
-	max-width: 900px;
+	max-width: 600px;
 	margin-right: 0;
 	margin-left: auto;
 	margin-right: auto;
