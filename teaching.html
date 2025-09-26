@@ -118,9 +118,40 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
-			fetch('header.html').then(r => r.text()).then(t => document.getElementById('header').innerHTML = t);
+			fetch('header.html')
+			.then(r => r.text())
+			.then(t => {
+				document.getElementById('header').innerHTML = t;
+				if (window.jQuery && window.$) {
+				// 移除舊的 navPanel 和 titleBar
+				$('#navPanel').remove();
+				$('#titleBar').remove();
+				// 建立 navPanel
+				$('<div id="navPanel"><nav>' + $('#nav').navList() + '</nav></div>')
+					.appendTo('body')
+					.panel({
+					delay: 500,
+					hideOnClick: true,
+					hideOnSwipe: true,
+					resetScroll: true,
+					resetForms: true,
+					side: 'left',
+					target: $('body'),
+					visibleClass: 'navPanel-visible'
+					});
+				// 建立 titleBar
+				$('<div id="titleBar">' +
+					'<a href="#navPanel" class="toggle"></a>' +
+					'</div>').appendTo('body');
+				// 綁定 toggle 按鈕事件
+				$('.toggle').off('click').on('click', function(e) {
+					e.preventDefault();
+					$('body').toggleClass('navPanel-visible');
+				});
+				}
+			});
 			fetch('footer.html').then(r => r.text()).then(t => document.getElementById('footer').innerHTML = t);
-			</script>
+			</script>			
 
 	</body>
 </html>
