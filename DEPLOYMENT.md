@@ -4,15 +4,32 @@
 
 ## 部署步驟
 
-1. 將此 branch 的檔案上傳到舊主機的 `/weiweng` 目錄
-2. 確保 `.htaccess` 檔案生效（需要 Apache 支援）
-3. 測試轉址是否正常運作
+### 步驟 1: 上傳檔案
+將此 branch 的所有檔案上傳到舊主機的 `/weiweng` 目錄
+
+### 步驟 2: 測試 .htaccess
+1. 先測試 `.htaccess` 是否生效
+2. 訪問任何頁面（如 `about.html`）看是否自動轉址
+
+### 步驟 3: 如果 .htaccess 不生效
+如果分頁無法轉址，執行以下步驟：
+1. 將 `index-redirect.html` 重新命名為 `index.html`
+2. 將 `redirect-about.html` 重新命名為 `about.html`
+3. 將 `redirect-news.html` 重新命名為 `news.html`
+4. 將 `redirect-members.html` 重新命名為 `members.html`
+5. 對其他現有頁面重複此操作
 
 ## 檔案說明
 
-- `index-redirect.html`: 轉址頁面（如果 .htaccess 不支援，可重新命名為 index.html）
-- `.htaccess`: Apache 伺服器的 301 轉址設定
+### 伺服器級別轉址
+- `.htaccess`: Apache 伺服器的 301 轉址設定（優先選擇）
 - `robots.txt`: 告訴搜尋引擎不要索引舊網站
+
+### HTML 轉址檔案（.htaccess 備援方案）
+- `index-redirect.html`: 首頁轉址（重新命名為 `index.html`）
+- `redirect-about.html`: About 頁面轉址（重新命名為 `about.html`）
+- `redirect-news.html`: News 頁面轉址（重新命名為 `news.html`）
+- `redirect-members.html`: Members 頁面轉址（重新命名為 `members.html`）
 
 ## 轉址目標
 
