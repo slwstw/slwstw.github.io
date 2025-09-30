@@ -17,7 +17,9 @@
 2. 將 `redirect-about.html` 重新命名為 `about.html`
 3. 將 `redirect-news.html` 重新命名為 `news.html`
 4. 將 `redirect-members.html` 重新命名為 `members.html`
-5. 對其他現有頁面重複此操作
+5. 將 `redirect-publications.html` 重新命名為 `publications.html`
+6. 將 `redirect-research.html` 重新命名為 `research.html`
+7. 將 `redirect-teaching.html` 重新命名為 `teaching.html`
 
 ## 檔案說明
 
@@ -30,6 +32,9 @@
 - `redirect-about.html`: About 頁面轉址（重新命名為 `about.html`）
 - `redirect-news.html`: News 頁面轉址（重新命名為 `news.html`）
 - `redirect-members.html`: Members 頁面轉址（重新命名為 `members.html`）
+- `redirect-publications.html`: Publications 頁面轉址（重新命名為 `publications.html`）
+- `redirect-research.html`: Research 頁面轉址（重新命名為 `research.html`）
+- `redirect-teaching.html`: Teaching 頁面轉址（重新命名為 `teaching.html`）
 
 ## 轉址目標
 

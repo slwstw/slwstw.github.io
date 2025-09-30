@@ -5,17 +5,17 @@
 Redirect 301 / https://slwstw.github.io/
 
 # 方法 2: 使用 RewriteRule（如果上面的 Redirect 不生效，取消下面的註解）
-# RewriteEngine On
-# RewriteCond %{REQUEST_FILENAME} !-f
-# RewriteCond %{REQUEST_FILENAME} !-d
-# RewriteRule ^(.*)$ https://slwstw.github.io/$1 [R=301,L]
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ https://slwstw.github.io/$1 [R=301,L]
 
 # 具體頁面轉址（備用方案）
-# RedirectMatch 301 ^/$ https://slwstw.github.io/
-# RedirectMatch 301 ^/index\.html$ https://slwstw.github.io/
-# RedirectMatch 301 ^/about\.html$ https://slwstw.github.io/about.html
-# RedirectMatch 301 ^/news\.html$ https://slwstw.github.io/news.html
-# RedirectMatch 301 ^/members\.html$ https://slwstw.github.io/members.html
-# RedirectMatch 301 ^/publications\.html$ https://slwstw.github.io/publications.html
-# RedirectMatch 301 ^/research\.html$ https://slwstw.github.io/research.html
-# RedirectMatch 301 ^/teaching\.html$ https://slwstw.github.io/teaching.html
+RedirectMatch 301 ^/$ https://slwstw.github.io/
+RedirectMatch 301 ^/index\.html$ https://slwstw.github.io/
+RedirectMatch 301 ^/about\.html$ https://slwstw.github.io/about.html
+RedirectMatch 301 ^/news\.html$ https://slwstw.github.io/news.html
+RedirectMatch 301 ^/members\.html$ https://slwstw.github.io/members.html
+RedirectMatch 301 ^/publications\.html$ https://slwstw.github.io/publications.html
+RedirectMatch 301 ^/research\.html$ https://slwstw.github.io/research.html
+RedirectMatch 301 ^/teaching\.html$ https://slwstw.github.io/teaching.html
