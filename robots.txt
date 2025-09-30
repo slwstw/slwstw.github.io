@@ -1,0 +1,8 @@
+# 告訴搜尋引擎不要索引這個舊網站
+# 新網站位於: https://slwstw.github.io/
+
+User-agent: *
+Disallow: /
+
+# 指向新網站的 sitemap
+Sitemap: https://slwstw.github.io/sitemap.xml
