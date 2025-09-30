@@ -10,8 +10,7 @@
 
 ## 檔案說明
 
-- `index-redirect.html`: 主要的轉址頁面（如果 .htaccess 不支援，可重新命名為 index.html）
-- `redirect.html`: 備用的轉址頁面
+- `index-redirect.html`: 轉址頁面（如果 .htaccess 不支援，可重新命名為 index.html）
 - `.htaccess`: Apache 伺服器的 301 轉址設定
 - `robots.txt`: 告訴搜尋引擎不要索引舊網站
 
