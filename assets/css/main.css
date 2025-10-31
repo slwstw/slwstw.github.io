@@ -2429,6 +2429,59 @@ ul.publications li a[href^="https://doi.org"] {
 	margin-right: auto;
 }
 
+/* Bilingual (中英文並陳) Styling */
+.bilingual h3 .lang-zh,
+.bilingual h3 .lang-en {
+	display: block;
+}
+
+.bilingual h3 .lang-zh {
+	font-weight: 700;
+}
+
+.bilingual h3 .lang-en {
+	color: #666;
+	font-style: italic;
+}
+
+/* Bilingual list styling */
+.bilingual ul li .lang-en {
+	margin-left: 0.5rem;
+	color: #666;
+	display: inline;
+}
+
+.bilingual ul li .lang-zh {
+	display: inline;
+}
+
+/* Bilingual paragraph styling */
+.bilingual p .lang-en {
+	display: block;
+	margin-top: 0.5rem;
+	color: #444;
+}
+
+/* Figure styling */
+figure {
+	margin: 0;
+}
+
+figure figcaption {
+	font-size: 0.9rem;
+	margin-top: 0.5rem;
+}
+
+figure figcaption .lang-zh {
+	display: block;
+}
+
+figure figcaption .lang-en {
+	display: block;
+	color: #666;
+	margin-top: 0.5rem;
+}
+
 /* Copyright */
 
 	#copyright {
