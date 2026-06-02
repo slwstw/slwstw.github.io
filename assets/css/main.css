@@ -1,5 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Libre+Baskerville:wght@400;700&display=swap");
 
 /*
 	Strongly Typed by HTML5 UP
@@ -7,24 +8,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
-	.container {
-		max-width: 1000px;
-		width: 100%;
-		margin: 0 auto;
-		padding: 20px;
-	}
-}
+/* Reset handled by the template below. */
 
 body {
 	-webkit-text-size-adjust: none;
@@ -59,6 +43,11 @@ input, select, textarea {
 
 	body {
 		background: #f0f0f0;
+	}
+
+	body.homepage {
+		background:
+			linear-gradient(180deg, #fff9f7 0%, #f5f3f2 22%, #f0f0f0 100%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2087,9 +2076,327 @@ input, select, textarea {
 			text-align: center;
 		}*/
 
-		#features ul.actions {
+	#features ul.actions {
 			margin-top: 1.25em;
 		}
+
+	#features.news-page {
+		background:
+			linear-gradient(180deg, rgba(237, 120, 106, 0.08) 0%, rgba(240, 240, 240, 0) 18%),
+			#f0f0f0;
+		padding-top: 1.5em;
+		padding-bottom: 2.5em;
+	}
+
+	/* Newsroom */
+
+	.news-page {
+		background: transparent;
+		font-family: "Libre Baskerville", "Cheltenham", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	}
+
+	.news-hero {
+		padding-top: 1.5em;
+		padding-bottom: 0.5em;
+	}
+
+	.news-hero .eyebrow {
+		margin-bottom: 0.5em;
+		text-transform: uppercase;
+		letter-spacing: 0.24em;
+		font-size: 0.82em;
+		font-weight: 700;
+		color: #ed786a;
+		text-align: center;
+	}
+
+	.news-hero .lead {
+		max-width: 58em;
+		margin: 0 auto 1.2em auto;
+		text-align: center;
+		font-size: 1.06em;
+		color: #666;
+		font-family: "Libre Baskerville", "Cheltenham", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	}
+
+	.news-hero .news-actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.8em;
+		justify-content: center;
+		margin: 1.25em 0 0.5em 0;
+	}
+
+	.news-hero .news-actions a {
+		border: 0;
+	}
+
+	.news-hero .news-chips {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.6em;
+		justify-content: center;
+		margin-top: 1.25em;
+	}
+
+	.news-hero .news-chip {
+		display: inline-flex;
+		align-items: center;
+		padding: 0.55em 0.95em;
+		border-radius: 999px;
+		background: rgba(255, 255, 255, 0.92);
+		border: 1px solid rgba(237, 120, 106, 0.14);
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+		color: #666;
+		font-size: 0.9em;
+		border-bottom: 0;
+	}
+
+	.news-hero .news-chip:hover {
+		border-color: rgba(237, 120, 106, 0.34);
+		color: #ed786a;
+	}
+
+	.news-hero .news-chip strong {
+		color: inherit;
+		margin-right: 0.35em;
+	}
+
+	.news-filter-bar {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75em;
+		justify-content: center;
+		margin: 1.5em 0 0 0;
+	}
+
+	.news-filter-btn {
+		border: 1px solid rgba(237, 120, 106, 0.24);
+		background: rgba(255, 255, 255, 0.94);
+		color: #2b2b2b !important;
+		font-family: "Libre Franklin", "Franklin Gothic Medium", "ITC Franklin Gothic", "Arial Narrow", Arial, sans-serif;
+		font-size: 0.8em;
+		letter-spacing: 0.04em;
+		border-radius: 999px;
+		padding: 0.48em 0.95em;
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+	}
+
+	.news-filter-btn:hover,
+	.news-filter-btn.is-active {
+		border-color: rgba(237, 120, 106, 0.45);
+		background: rgba(237, 120, 106, 0.08);
+		color: #2b2b2b !important;
+	}
+
+	.container.news {
+		position: relative;
+		background: #fff;
+		border-radius: 18px;
+		box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+		border: 1px solid rgba(0, 0, 0, 0.04);
+		padding: 2em 2.2em 1.8em 2.2em;
+		margin: 1.25em auto;
+		max-width: 980px;
+		transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+	}
+
+	.container.news:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 18px 38px rgba(0, 0, 0, 0.11);
+		border-color: rgba(237, 120, 106, 0.16);
+	}
+
+	.container.news h3 {
+		margin-top: 0;
+		font-size: 1.5em;
+		color: #2f2f2f;
+		font-weight: 700;
+		letter-spacing: 0.5px;
+		text-align: left;
+		text-transform: none;
+		line-height: 1.35;
+		font-family: "Libre Baskerville", "Cheltenham", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	}
+
+	.container.news .news-category {
+		display: inline-flex;
+		align-items: center;
+		margin-bottom: 0;
+		padding: 0.18em 0.58em;
+		border-radius: 999px;
+		background: rgba(0, 0, 0, 0.05);
+		color: #666;
+		font-size: 0.7em;
+		font-weight: 700;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+
+	.container.news .news-date {
+		display: inline-flex;
+		align-items: center;
+		position: static;
+		padding: 0.18em 0.58em;
+		border-radius: 999px;
+		background: rgba(255, 255, 255, 0.96);
+		border: 1px solid rgba(237, 120, 106, 0.18);
+		color: #ed786a;
+		font-size: 0.7em;
+		font-weight: 700;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+		white-space: nowrap;
+	}
+
+	.container.news .news-topline {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 0.55em;
+		padding-right: 0;
+		margin-bottom: 0.25em;
+		flex-wrap: wrap;
+	}
+
+	.container.news .news-kicker {
+		display: inline-flex;
+		align-items: center;
+		margin-bottom: 0.9em;
+		padding: 0.3em 0.8em;
+		border-radius: 999px;
+		background: rgba(237, 120, 106, 0.12);
+		color: #ed786a;
+		font-size: 0.8em;
+		font-weight: 700;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+	}
+
+	.container.news ul {
+		margin-bottom: 0;
+	}
+
+	.container.news ul li:first-child {
+		font-weight: 700;
+		color: #ed786a;
+		margin-bottom: 0.6em;
+		list-style: none;
+		padding-left: 0;
+	}
+
+	.container.news p,
+	.container.news li {
+		line-height: 1.75em;
+		font-size: 0.95em;
+		font-family: "Libre Baskerville", "Cheltenham", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	}
+
+	.container.news a {
+		border-bottom-color: rgba(237, 120, 106, 0.25);
+	}
+
+	.container.news .news-reference {
+		font-size: 0.82em;
+		line-height: 1.55em;
+		color: #666;
+	}
+
+	.container.news .image-container {
+		display: flex;
+		gap: 1em;
+		justify-content: center;
+		margin-top: 1.5em;
+		flex-wrap: wrap;
+	}
+
+	.container.news .image-container img {
+		border-radius: 14px;
+		box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+		border: 1px solid rgba(0, 0, 0, 0.06);
+		transition: transform 0.25s ease, box-shadow 0.25s ease;
+	}
+
+	.container.news .image-container img:hover {
+		transform: scale(1.01);
+		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.16);
+	}
+
+	.container.news.featured {
+		border: 1px solid rgba(237, 120, 106, 0.22);
+		background:
+			linear-gradient(135deg, rgba(237, 120, 106, 0.08), rgba(255, 255, 255, 0.98));
+	}
+
+	.container.news.featured h3 {
+		font-size: 1.65em;
+	}
+
+	.container.news details.news-details {
+		margin-top: 1.1em;
+	}
+
+	.container.news details.news-details summary {
+		display: inline-flex;
+		align-items: center;
+		padding: 0;
+		border-radius: 0;
+		background: transparent;
+		color: #666;
+		font-size: 0.7em;
+		font-weight: 600;
+		letter-spacing: 0.02em;
+		cursor: pointer;
+		list-style: none;
+		border-bottom: 0;
+		font-family: "Libre Franklin", "Franklin Gothic Medium", "ITC Franklin Gothic", "Arial Narrow", Arial, sans-serif;
+		text-decoration: none;
+	}
+
+	.container.news details.news-details summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.container.news details.news-details summary::after {
+		content: " →";
+		color: #b3b3b3;
+		font-weight: 700;
+		transition: transform 0.2s ease;
+	}
+
+	.container.news details.news-details[open] summary::after {
+		content: " ↓";
+	}
+
+	.container.news details.news-details summary:hover {
+		color: #444;
+	}
+
+	.container.news details.news-details summary:hover::after {
+		transform: translateX(2px);
+	}
+
+	.container.news .news-details-body {
+		margin-top: 1em;
+		padding-top: 0.25em;
+		border-top: 1px solid rgba(0, 0, 0, 0.06);
+	}
+
+	@media screen and (max-width: 736px) {
+		.container.news .news-topline {
+			flex-direction: column;
+			padding-right: 0;
+			align-items: flex-start;
+		}
+
+		.container.news .news-date {
+			position: static;
+			margin-top: 0.35em;
+			align-self: flex-start;
+		}
+	}
 
 /* Banner */
 
@@ -2328,106 +2635,82 @@ ul.publications li a[href^="https://doi.org"] {
 		grid-template-columns: 1fr;
 	}
 }
-/* News Card Style */
-.container.news {
-	background: #fff;
-	border-radius: 12px;
-	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-	padding: 2em 2em 1.5em 2em;
-	margin: 1em auto;
-	max-width: 950px;
-}
-
-.container.news img {
-	width: 100%;
-	height: auto;
-	display: block;
-	margin: 0 auto;
-	aspect-ratio: 4/3;
-	object-fit: contain;
-}
-
-.container.news h3 {
-	margin-top: 0;
-	font-size: 1.5em;
-	color: #333;
-	font-weight: bold;
-	letter-spacing: 2px;
-	text-align: center;
-}
-
-.container.news .image-container {
-	display: flex;
-	gap: 1em;
-	justify-content: center;
-	margin-top: 1.5em;
-	flex-wrap: wrap;
-}
-
-/* 兩欄排列圖片（寬度超過 900px） */
-@media (min-width: 901px) {
-	.container.news .image-container {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 1em;
-	}
-	.container.news .image-container img {
+	.container.news img {
 		width: 100%;
-		max-width: 100%;
-		margin: 0 auto;
-		aspect-ratio: 4/3;
-		object-fit: contain;
-	}
-	/* 只有一張圖片時 max-width:800px 並讓其單欄置中 */
-	.container.news .image-container:only-child,
-	.container.news .image-container img:only-child {
-		grid-column: 1 / -1;
-		max-width: 800px;
-		margin-left: auto;
-		margin-right: auto;
+		height: auto;
 		display: block;
-	}
-}
-
-/* RWD: 手機單欄 */
-@media (max-width: 900px) {
-	.container.news .image-container {
-		flex-direction: column;
-		align-items: stretch;
-		width: 100%;
-		padding: 0;
-		margin: 0;
-		gap: 1em;
-		display: flex;
-	}
-	.container.news .image-container img {
-		width: 100%;
-		max-width: 100%;
 		margin: 0 auto;
-		flex: 1 1 100%;
 		aspect-ratio: 4/3;
 		object-fit: contain;
+		background: #fafafa;
 	}
-	/* 手機時只有一張圖片也設 max-width:800px */
+
+	/* 兩欄排列圖片（寬度超過 900px） */
+	@media (min-width: 901px) {
+		.container.news .image-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 1em;
+		}
+		.container.news .image-container img {
+			width: 100%;
+			max-width: 100%;
+			margin: 0 auto;
+			aspect-ratio: 4/3;
+			object-fit: contain;
+			background: #fafafa;
+		}
+		/* 只有一張圖片時 max-width:800px 並讓其單欄置中 */
+		.container.news .image-container:only-child,
+		.container.news .image-container img:only-child {
+			grid-column: 1 / -1;
+			max-width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+	}
+
+	/* RWD: 手機單欄 */
+	@media (max-width: 900px) {
+		.container.news .image-container {
+			flex-direction: column;
+			align-items: stretch;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			gap: 1em;
+			display: flex;
+		}
+		.container.news .image-container img {
+			width: 100%;
+			max-width: 100%;
+			margin: 0 auto;
+			flex: 1 1 100%;
+			aspect-ratio: 4/3;
+			object-fit: contain;
+			background: #fafafa;
+		}
+		/* 手機時只有一張圖片也設 max-width:800px */
+		.container.news .image-container img:only-child {
+			max-width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	/* 最後一張不要右邊間距 */
+	.container.news .image-container img:last-child {
+		margin-right: 0;
+	}
+
+	/* 只有一張圖片時 max-width:600px */
 	.container.news .image-container img:only-child {
-		max-width: 800px;
+		max-width: 600px;
+		margin-right: 0;
 		margin-left: auto;
 		margin-right: auto;
 	}
-}
-
-/* 最後一張不要右邊間距 */
-.container.news .image-container img:last-child {
-	margin-right: 0;
-}
-
-/* 只有一張圖片時 max-width:600px */
-.container.news .image-container img:only-child {
-	max-width: 600px;
-	margin-right: 0;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 /* Bilingual (中英文並陳) Styling */
 .bilingual h3 .lang-zh,
