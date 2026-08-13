@@ -47,6 +47,15 @@
 					<!-- 3. The "id" should be uniqued in news-{number} but the order doesnot matter, since the latest item is detected by data-date. -->
 					<!-- 4. Must provide a "data-date" in the format YYYY-MM-DD for each news item -->
 
+					<div class="container news" id="news-19" data-date="2026-07-31">
+						<h3>Aerial River Research in South America Accepted for Publishing in <em>Nature Communications</em></h3>
+						<ul>
+							<p>We are thrilled to mark a significant milestone for SLWS: our study on aerial rivers in South America is accepted for publication in <em>Nature Communications</em>. This paper is the first to map the hidden topography of headwaters, drainage networks, and plains shaped by flying rivers. This research was conducted by Prof. Wei Weng and SLWS alumnus Ping Fu, together with partners from Department of Civil Engineering, Department of Atmospheric Sciences, PIK, and Université Rennes 2.</p>
+							<p>See article in press: <a href="https://www.nature.com/articles/s41467-026-76303-y">https://www.nature.com/articles/s41467-026-76303-y</a></p>
+							<p>Author List: Wei Weng, Ping Fu, Ho-Tin Hung, Kai-Chih Tseng, Li-Pen Wang, Yun-Man Hsu, Min-Hui Lo, Luís Costa, and Vincent Dubreuil.</p>
+						</ul>
+					</div>
+
 					<div class="container news bilingual" id="news-18" data-date="2026-05-09" data-date-label="1–9 May 2026">
 						<h3>SLWS Field Survey in Mongolia Supports Long-term Forest Restoration</h3>
 						<ul>
@@ -331,6 +340,7 @@
 			fetch('footer.html').then(r => r.text()).then(t => document.getElementById('footer').innerHTML = t);
 
 				const categoryMap = {
+					'news-19': 'Research & Global Outreach',
 					'news-18': 'Research & Global Outreach',
 					'news-17b': 'Research & Global Outreach',
 					'news-17': 'Research & Global Outreach',
