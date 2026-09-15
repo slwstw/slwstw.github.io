@@ -5,92 +5,99 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title> Publications | Wei Weng's Sustainable Land-Water Systems Lab (SLWS) | NTU Geography</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Sustainable Land-Water Systems Lab by Prof. Wei Weng, Department of Geography, National Taiwan University (NTU). Research, teaching, publications, and contact information for Prof. Wei Weng.">
-		<meta name="keywords" content="Wei Weng, Sustainable Land-Water Systems Lab, SLWS, NTU Geography, National Taiwan University, research, aerial rivers, climate change, land-water systems, ESG">
-		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
 
-			<!-- Header -->
-			<!-- Please edit Header in "header.html" -->
-			 <div id="header"></div>
+<head>
+	<title> Publications | Wei Weng's Sustainable Land-Water Systems Lab (SLWS) | NTU Geography</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description"
+		content="Sustainable Land-Water Systems Lab by Prof. Wei Weng, Department of Geography, National Taiwan University (NTU). Research, teaching, publications, and contact information for Prof. Wei Weng.">
+	<meta name="keywords"
+		content="Wei Weng, Sustainable Land-Water Systems Lab, SLWS, NTU Geography, National Taiwan University, research, aerial rivers, climate change, land-water systems, ESG">
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
 
-			<!-- Features -->
-	
+<body class="homepage is-preload">
+	<div id="page-wrapper">
 
-			<!-- Banner -->
-				<a  name="publications">
-					<section id="features">
-							<div class="container" >
-								<h2><strong>Publications</strong></h2>
-								<ul class="publications">
-									<li>Weng, W., Becker, S. L., Luedeke, M. K. B., and Lakes, T. (2020) Landscape matters: insights from the impact of mega-droughts on Colombia's energy transition, Environmental Innovation and Societal Transitions, 36, 1-16, <a href="https://doi.org/10.1016/j.eist.2020.04.003" target="_blank">https://doi.org/10.1016/j.eist.2020.04.003</a>.</li>
-									<li>Weng, W. (2020) Aerial river management for future water in the context of land use change in Amazonia, Doctoral thesis of Humboldt-Universität zu Berlin. <a href="https://doi.org/10.18452/21097" target="_blank">https://doi.org/10.18452/21097</a>.</li>
-									<li>Weng, W., Costa, L., Luedeke, M. K. B. and Zemp, D. C. (2019) Aerial river management by smart cross-border reforestation, Land Use Policy, 84, 105-113, <a href="https://doi.org/10.1016/j.landusepol.2019.03.010" target="_blank">https://doi.org/10.1016/j.landusepol.2019.03.010</a>.</li>
-									<li>Weng, W., Luedeke, M. K. B., Zemp, D. C., Lakes, T., and Kropp, J. P. (2018) Aerial and surface rivers: downwind impacts on water availability from land use changes in Amazonia, Hydrol. Earth Syst. Sci., 22, 911-927, <a href="https://doi.org/10.5194/hess-22-911-2018" target="_blank">https://doi.org/10.5194/hess-22-911-2018</a></li>
-									<li>Weng, W., Costa, L., Luedeke, M. K. B., Zemp, D. C., Castro, M. M., Hinojosa, B. G., Lakes, T., and Quintero M. (2018-) A new strategy for planning reforestation sites: Collecting atmospheric water for the city’s future usage, Policy Brief to Department of Natural Resources, Santa Cruz de la Sierra, Bolivia.</li>
-									<li>Weng, W. (2014) Modelling Power over Wetland Dynamics – Validation of the JULES Model’s Performance in Simulating Wetlands Changes in the Ob River Basin, University of Oxford Master of Science dissertation.</li>
-									<li>Weng, W. (2012) Temporal and spatial signal variations of chemical weathering: lithologic controls of water chemistry in Daan River, National Science Coucil (Taiwan) Individual Research Project Reports.</li>
-								</ul>
-							</div>
-						
-					</section>
-				</a>
+		<!-- Header -->
+		<!-- Please edit Header in "header.html" -->
+		<div id="header"></div>
 
-			<!-- Footer -->
-			<!-- Please edit Footer in "footer.html" -->
-			 <div id="footer"></div>				
+		<!-- Features -->
 
-		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script>
-			fetch('header.html')
+		<!-- Banner -->
+		<a name="publications">
+			<section id="features">
+				<div class="container">
+					<h2><strong>Publications</strong></h2>
+					<ul id="publications-list" class="publications"></ul>
+				</div>
+
+			</section>
+		</a>
+
+		<!-- Footer -->
+		<!-- Please edit Footer in "footer.html" -->
+		<div id="footer"></div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		fetch('header.html')
 			.then(r => r.text())
 			.then(t => {
 				document.getElementById('header').innerHTML = t;
 				if (window.jQuery && window.$) {
-				// 移除舊的 navPanel 和 titleBar
-				$('#navPanel').remove();
-				$('#titleBar').remove();
-				// 建立 navPanel
-				$('<div id="navPanel"><nav>' + $('#nav').navList() + '</nav></div>')
-					.appendTo('body')
-					.panel({
-					delay: 500,
-					hideOnClick: true,
-					hideOnSwipe: true,
-					resetScroll: true,
-					resetForms: true,
-					side: 'left',
-					target: $('body'),
-					visibleClass: 'navPanel-visible'
+					// 移除舊的 navPanel 和 titleBar
+					$('#navPanel').remove();
+					$('#titleBar').remove();
+					// 建立 navPanel
+					$('<div id="navPanel"><nav>' + $('#nav').navList() + '</nav></div>')
+						.appendTo('body')
+						.panel({
+							delay: 500,
+							hideOnClick: true,
+							hideOnSwipe: true,
+							resetScroll: true,
+							resetForms: true,
+							side: 'left',
+							target: $('body'),
+							visibleClass: 'navPanel-visible'
+						});
+					// 建立 titleBar
+					$('<div id="titleBar">' +
+						'<a href="#navPanel" class="toggle"></a>' +
+						'</div>').appendTo('body');
+					// 綁定 toggle 按鈕事件
+					$('.toggle').off('click').on('click', function (e) {
+						e.preventDefault();
+						$('body').toggleClass('navPanel-visible');
 					});
-				// 建立 titleBar
-				$('<div id="titleBar">' +
-					'<a href="#navPanel" class="toggle"></a>' +
-					'</div>').appendTo('body');
-				// 綁定 toggle 按鈕事件
-				$('.toggle').off('click').on('click', function(e) {
-					e.preventDefault();
-					$('body').toggleClass('navPanel-visible');
-				});
 				}
 			});
-			fetch('footer.html').then(r => r.text()).then(t => document.getElementById('footer').innerHTML = t);
-			</script>			
+		fetch('footer.html').then(r => r.text()).then(t => document.getElementById('footer').innerHTML = t);
 
-	</body>
+		fetch('data/publications.json')
+			.then(response => response.json())
+			.then(items => {
+				const list = document.getElementById('publications-list');
+				list.innerHTML = items.map(item => `<li>${item.text}</li>`).join('');
+			})
+			.catch(error => {
+				console.error('Failed to load publications data:', error);
+			});
+	</script>
+
+</body>
+
 </html>
