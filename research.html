@@ -5,106 +5,114 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title> Research | Wei Weng's Sustainable Land-Water Systems Lab (SLWS) | NTU Geography</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Sustainable Land-Water Systems Lab by Prof. Wei Weng, Department of Geography, National Taiwan University (NTU). Research, teaching, publications, and contact information for Prof. Wei Weng.">
-		<meta name="keywords" content="Wei Weng, Sustainable Land-Water Systems Lab, SLWS, NTU Geography, National Taiwan University, research, aerial rivers, climate change, land-water systems, ESG">
-		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
 
-			<!-- Header -->
-			<!-- Please edit Header in "header.html" -->
-			 <div id="header"></div>
-				
-			<!-- Features -->
-	
+<head>
+	<title> Research | Wei Weng's Sustainable Land-Water Systems Lab (SLWS) | NTU Geography</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description"
+		content="Sustainable Land-Water Systems Lab by Prof. Wei Weng, Department of Geography, National Taiwan University (NTU). Research, teaching, publications, and contact information for Prof. Wei Weng.">
+	<meta name="keywords"
+		content="Wei Weng, Sustainable Land-Water Systems Lab, SLWS, NTU Geography, National Taiwan University, research, aerial rivers, climate change, land-water systems, ESG">
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
 
-			<!-- Banner -->
-				<a  name="research">
-					<section id="features">
-							<div class="container" >
-								<h2><strong>Research</strong></h2>
-								<h3>Ongoing projects</h3>
-								<ul >
-									<li>On Heat Mortality and Adaptive Urban Infrastructure: A Global Study</li>
-									<li>Aerial River (Flying River) Study in South America</li>
-									<li>Water Resources Management in Colombia– National Scale Study (NSTC project 112-2410-H-002-255-MY2)</li>
-									<li>Impacts on Public Health from Fires in Brazilian Amazon</li>
-								</ul>
-								<h3>Master’s projects</h3>
-								<ul >
-									<li>Damage Function: Historical Droughts in Central Taiwan (Shawn Lee)</li>
-									<li>The Impact of Urban Infrastructure on Population Adaptation to Extreme Temperature (Shawn Lee)</li>
-								</ul>
-								<h3>Bachelor's projects</h3>
-								<ul >
-									<li>On Data Uncertainties of Continental Moisture Tracking (Ping Fu)</li>
-									<li>Wild fire impact on public health in legal Amazonia region (Ping Fu; Timothy Chen)</li>
-									<li>Not Just Numbers: Water-Based Livelihood in a Deforested Amazonian Landscape (Austin Xiao)</li>
-									<li>If the Century Drought Strikes Again: Assessing Economic Losses, Water Resource Resilience, and Policy Adaptation in Taiwan under Prolonged Drought (NSTC 114-2813-C-002-203-H) (Zi-Feng Chen)</li>
-									<li>Feeding Growing Cities: Tracing Causal Relationship between Urbanization and Protein Supply (Herman Ho)</li>
-									<li>Analyzing the Transformation of Taiwan’s Rice System after 1997 through the Multi-Level Perspective in Transition Studies (NSTC 114-2813-C-002-011-M) (Tiana Lu)</li>
-									<li>TNFD & Nature-related Financial Disclosure (Eru Chiang; Tiana Lu)</li>
-								</ul>
-								<strong>If you are interested in the projects above or have any research ideas related to Latin America, sustainable land-water system management, or ESG, please do not hesitate to contact me at </strong><a href = "mailto: weiweng@ntu.edu.tw">weiweng@ntu.edu.tw</a>
-							</div>
-						
-					</section>
-				</a>
-			
-			<!-- Footer -->
-			<!-- Please edit Footer in "footer.html" -->
-			 <div id="footer"></div>
+<body class="homepage is-preload">
+	<div id="page-wrapper">
 
-		</div>
+		<!-- Header -->
+		<!-- Please edit Header in "header.html" -->
+		<div id="header"></div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script>
-			fetch('header.html')
+		<!-- Features -->
+
+
+		<!-- Banner -->
+		<a name="research">
+			<section id="features">
+				<div class="container">
+					<h2><strong>Research</strong></h2>
+					<div id="research-sections"></div>
+					<strong>If you are interested in the projects above or have any research ideas related to Latin
+						America, sustainable land-water system management, or ESG, please do not hesitate to contact me
+						at </strong><a href="mailto: weiweng@ntu.edu.tw">weiweng@ntu.edu.tw</a>
+				</div>
+
+			</section>
+		</a>
+
+		<!-- Footer -->
+		<!-- Please edit Footer in "footer.html" -->
+		<div id="footer"></div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		fetch('header.html')
 			.then(r => r.text())
 			.then(t => {
 				document.getElementById('header').innerHTML = t;
 				if (window.jQuery && window.$) {
-				// 移除舊的 navPanel 和 titleBar
-				$('#navPanel').remove();
-				$('#titleBar').remove();
-				// 建立 navPanel
-				$('<div id="navPanel"><nav>' + $('#nav').navList() + '</nav></div>')
-					.appendTo('body')
-					.panel({
-					delay: 500,
-					hideOnClick: true,
-					hideOnSwipe: true,
-					resetScroll: true,
-					resetForms: true,
-					side: 'left',
-					target: $('body'),
-					visibleClass: 'navPanel-visible'
+					// 移除舊的 navPanel 和 titleBar
+					$('#navPanel').remove();
+					$('#titleBar').remove();
+					// 建立 navPanel
+					$('<div id="navPanel"><nav>' + $('#nav').navList() + '</nav></div>')
+						.appendTo('body')
+						.panel({
+							delay: 500,
+							hideOnClick: true,
+							hideOnSwipe: true,
+							resetScroll: true,
+							resetForms: true,
+							side: 'left',
+							target: $('body'),
+							visibleClass: 'navPanel-visible'
+						});
+					// 建立 titleBar
+					$('<div id="titleBar">' +
+						'<a href="#navPanel" class="toggle"></a>' +
+						'</div>').appendTo('body');
+					// 綁定 toggle 按鈕事件
+					$('.toggle').off('click').on('click', function (e) {
+						e.preventDefault();
+						$('body').toggleClass('navPanel-visible');
 					});
-				// 建立 titleBar
-				$('<div id="titleBar">' +
-					'<a href="#navPanel" class="toggle"></a>' +
-					'</div>').appendTo('body');
-				// 綁定 toggle 按鈕事件
-				$('.toggle').off('click').on('click', function(e) {
-					e.preventDefault();
-					$('body').toggleClass('navPanel-visible');
-				});
 				}
 			});
-			fetch('footer.html').then(r => r.text()).then(t => document.getElementById('footer').innerHTML = t);
-			</script>			
+		fetch('footer.html').then(r => r.text()).then(t => document.getElementById('footer').innerHTML = t);
 
-	</body>
+		fetch('data/research.json')
+			.then(response => response.json())
+			.then(data => {
+				const sections = [
+					{ key: 'ongoingProjects', label: 'Ongoing projects' },
+					{ key: 'mastersProjects', label: 'Master’s projects' },
+					{ key: 'bachelorsProjects', label: "Bachelor's projects" }
+				];
+
+				const container = document.getElementById('research-sections');
+				container.innerHTML = sections.map(section => {
+					const items = (data[section.key] || []).map(item => `<li>${item}</li>`).join('');
+					return `
+						<h3>${section.label}</h3>
+						<ul>${items}</ul>
+					`;
+				}).join('');
+			})
+			.catch(error => {
+				console.error('Failed to load research data:', error);
+			});
+	</script>
+
+</body>
+
 </html>

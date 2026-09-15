@@ -1,0 +1,97 @@
+[
+    {
+        "name": "Shao-Fang Li (Shawn)",
+        "role": "Alumni",
+        "photo": "images/members/shao-fang-li.jpg",
+        "projects": [
+            "The Impact of Urban Infrastructure on Population Adaptation to Extreme Temperature"
+        ]
+    },
+    {
+        "name": "Chen-Wei Ho (Herman)",
+        "role": "Alumni",
+        "photo": "images/members/chen-wei-ho.jpeg",
+        "projects": [
+            "Feeding Growing Cities: Tracing Causal Relationship between Urbanization and Protein Supply.",
+            "Analyzed nutrition transitions across 149 countries (1991–2021), linking socio-economic development to food security. Identified misalignment patterns and highlighted how structural contexts shape nutrition disparities."
+        ]
+    },
+    {
+        "name": "Hao-Ren Shiau (Austin)",
+        "role": "Master Student",
+        "photo": "images/members/hao-ren-shiau.jpg",
+        "projects": [
+            "Not Just Numbers: Water-Based Livelihood in a Deforested Amazonian Landscape"
+        ]
+    },
+    {
+        "name": "Zi-Feng Chen",
+        "role": "Bachelor Student",
+        "photo": "images/members/zi-feng-chen.jpg",
+        "projects": [
+            "If the Century Drought Strikes Again: Assessing Economic Losses, Water Resource Resilience, and Policy Adaptation in Taiwan under Prolonged Drought (NSTC 114-2813-C-002-203-H)",
+            "Heat mortality and urban infrastructure"
+        ]
+    },
+    {
+        "name": "Mu-Tian Lu (Tiana)",
+        "role": "Bachelor Student",
+        "photo": "images/members/mu-tian-lu.jpeg",
+        "projects": [
+            "Analyzing the Transformation of Taiwan’s Rice System after 1997 through the Multi-Level Perspective in Transition Studies (NSTC 114-2813-C-002-011-M)",
+            "Research on the Methodology and Applications of TNFD"
+        ]
+    },
+    {
+        "name": "Eru Chiang",
+        "role": "Alumni",
+        "photo": "images/members/eru-chiang.jpg",
+        "projects": [
+            "TNFD & Nature-related Financial Disclosure",
+            "Renewable Energy Transition in Asia",
+            "Environmental Archaeology"
+        ]
+    },
+    {
+        "name": "Yu-Hsiang Chang",
+        "role": "Alumni",
+        "photo": "images/members/yu-hsiang-chang.JPG",
+        "projects": [
+            "Investigating climate impacts of afforestation on albedo effect in Mongolia"
+        ]
+    },
+    {
+        "name": "Kai-Yuan Cheng (Carrie)",
+        "role": "Bachelor Student",
+        "photo": "images/members/kai-yuan-cheng.jpeg",
+        "projects": [
+            "Climate change economics"
+        ]
+    },
+    {
+        "name": "Yu-Chi Su",
+        "role": "Alumni",
+        "photo": "images/members/yu-chi-su.jpg",
+        "projects": [
+            "Net-Zero Carbon Emission Policy Transition in Taiwan"
+        ]
+    },
+    {
+        "name": "Ping Fu",
+        "role": "Alumni",
+        "photo": "images/members/ping-fu.jpg",
+        "projects": [
+            "On Data Uncertainty of Continental Moisture Tracking",
+            "Wild fire impact on public health in legal Amazonia region",
+            "Current master student in UTokyo"
+        ]
+    },
+    {
+        "name": "Sabrina Liu",
+        "role": "Alumni",
+        "photo": "",
+        "projects": [
+            "Research Assistant"
+        ]
+    }
+]
