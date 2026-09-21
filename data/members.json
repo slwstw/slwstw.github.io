@@ -25,6 +25,14 @@
         ]
     },
     {
+        "name": "Yi-Fan Wu (Joy)",
+        "role": "Master Student",
+        "photo": "images/members/yi-fan-wu.jpg",
+        "projects": [
+            "Corporate Sustainable Development"
+        ]
+    },
+    {
         "name": "Zi-Feng Chen",
         "role": "Bachelor Student",
         "photo": "images/members/zi-feng-chen.jpg",
@@ -65,7 +73,7 @@
         "role": "Bachelor Student",
         "photo": "images/members/kai-yuan-cheng.jpeg",
         "projects": [
-            "Climate change economics"
+            "From Local Drought to Global Shock: Quantifying the Amplification of Semiconductor Supply Disruptions through Global Supply Chains (NSTC 115-2813-C-002-049-H)"
         ]
     },
     {
