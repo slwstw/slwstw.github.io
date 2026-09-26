@@ -2580,11 +2580,17 @@ ul.publications li a[href^="https://doi.org"] {
 #lab-members {
 	margin: 2em 0;
 }
+<<<<<<< HEAD
 
 .alumni-details {
 	margin-top: 1em;
 }
 
+=======
+.alumni-details {
+	margin-top: 1em;
+}
+>>>>>>> b04fa16 (把alumini改成收闔式選單)
 .alumni-details summary {
 	display: flex;
 	align-items: center;
@@ -2595,11 +2601,17 @@ ul.publications li a[href^="https://doi.org"] {
 	list-style: none;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
+<<<<<<< HEAD
 
 .alumni-details summary::-webkit-details-marker {
 	display: none;
 }
 
+=======
+.alumni-details summary::-webkit-details-marker {
+	display: none;
+}
+>>>>>>> b04fa16 (把alumini改成收闔式選單)
 .alumni-details summary::after {
 	content: "";
 	width: 0;
@@ -2609,6 +2621,7 @@ ul.publications li a[href^="https://doi.org"] {
 	border-top: 0.55em solid #ed786a;
 	transition: transform 0.2s ease;
 }
+<<<<<<< HEAD
 
 .alumni-details[open] summary::after {
 	transform: rotate(180deg);
@@ -2626,6 +2639,20 @@ ul.publications li a[href^="https://doi.org"] {
 	margin-bottom: 2em;
 }
 
+=======
+.alumni-details[open] summary::after {
+	transform: rotate(180deg);
+}
+.alumni-details summary:hover {
+	color: #ed786a;
+}
+.alumni-details summary h2 {
+	margin-bottom: 0;
+}
+.alumni-details[open] summary {
+	margin-bottom: 2em;
+}
+>>>>>>> b04fa16 (把alumini改成收闔式選單)
 .member-cards {
 	display: flex;
 	flex-direction: column;
