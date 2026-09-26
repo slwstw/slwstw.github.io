@@ -2545,6 +2545,43 @@ ul.publications li a[href^="https://doi.org"] {
 #lab-members {
 	margin: 2em 0;
 }
+.alumni-details {
+	margin-top: 1em;
+}
+.alumni-details summary {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.35em 0;
+	color: #333;
+	cursor: pointer;
+	list-style: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.alumni-details summary::-webkit-details-marker {
+	display: none;
+}
+.alumni-details summary::after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 0.4em solid transparent;
+	border-right: 0.4em solid transparent;
+	border-top: 0.55em solid #ed786a;
+	transition: transform 0.2s ease;
+}
+.alumni-details[open] summary::after {
+	transform: rotate(180deg);
+}
+.alumni-details summary:hover {
+	color: #ed786a;
+}
+.alumni-details summary h2 {
+	margin-bottom: 0;
+}
+.alumni-details[open] summary {
+	margin-bottom: 2em;
+}
 .member-cards {
 	display: flex;
 	flex-direction: column;
